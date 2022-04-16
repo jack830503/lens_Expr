@@ -1,0 +1,9 @@
+# train and val datasets (image directory or *.txt file with image paths)
+train: C:/Users/Jen/Documents/project_1_lens/images  # 上面我們生成的train，根據自己的路徑進行更改
+val: C:/Users/Jen/Documents/project_1_lens/images  # 上面我們生成的test
+
+# number of classes
+nc: 4   #訓練的類別
+
+# class names
+names : [b","g","y","o"]
