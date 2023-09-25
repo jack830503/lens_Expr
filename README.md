@@ -66,7 +66,7 @@ python detect.py --weights runs/train/exp10/weights/best.pt --source inference/i
 7. 結果放在yolov5\runs\detect裡面 <br>
 ![image](https://github.com/jack830503/lens_Expr/blob/main/pictures/155-380-530-l.png) <br>
   - 每個測試圖片會生成結果圖片和同名的txt
-  - txt內容如下:
+  - txt內容如下: <br>
 ![image](https://github.com/jack830503/lens_Expr/blob/main/pictures/Untitled%20(7).png) <br>
   內容為: 類別編號、xcenter、ycenter、w、h，後面四個為正規化後的數值
 
