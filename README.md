@@ -70,3 +70,22 @@ python detect.py --weights runs/train/exp10/weights/best.pt --source inference/i
 ![image](https://github.com/jack830503/lens_Expr/blob/main/pictures/Untitled%20(7).png) <br>
   內容為: 類別編號、xcenter、ycenter、w、h，後面四個為正規化後的數值
 
+***
+## preDetect
+1. 尺標上60公分(600mm)。每間格x mm拍1張照片。ex: 在5,10,15...mm處個拍一張照片。照片中只能有一個標籤。
+
+2. 右相機拍到照片放入preDetect/rightPhoto裡; 左相機拍到照片放入preDetect/leftPhoto裡。
+
+3. 執行rename.py
+
+4. 執行pre_detect.py。生成照片的label檔以及標記尺上座標的json檔。rightPhoto和leftPhoto各有一個。
+
+***
+
+## Implement
+- 執行 detect.py
+`output : 物件'object',位置'position'`
+
+## Add hand gesture to start
+- 執行handtest.py
+`在鏡頭下比讚啟動辨識，有go表示開始辨識`
